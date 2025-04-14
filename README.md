@@ -1,54 +1,173 @@
-<header>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serena | Moda Praia & Íntima</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fefefe;
+      color: #333;
+    }
+    header {
+      background-color: #7FDBDA;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      color: #fff;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      color: #333;
+    }
+    .cta-button {
+      background-color: #7FDBDA;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .products {
+      padding: 2rem;
+    }
+    .products h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .product {
+      background: #fff;
+      border: 1px solid #eee;
+      padding: 1rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .product h3 {
+      margin: 0.5rem 0;
+    }
+    .product p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .product a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #7FDBDA;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+    .sobre {
+      background-color: #f9f9f9;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .sobre h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .sobre p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: #555;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer a {
+      margin: 0 1rem;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Serena</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+  <section id="home" class="hero">
+    <h2>Explore o poder da sua feminilidade</h2>
+    <p>Biquínis, lingeries e peças que abraçam seu corpo com charme e atitude.</p>
+    <a href="#produtos" class="cta-button">Compre agora</a>
+  </section>
 
-# GitHub Pages
+  <section id="produtos" class="products">
+    <h2>Moda Praia</h2>
+    <div class="product-grid">
+      <div class="product">
+        <h3>Biquíni Fio Dental Vermelho</h3>
+        <p>Sexy, confortável e feito para brilhar.</p>
+        <a href="#">Comprar</a>
+      </div>
+      <div class="product">
+        <h3>Calça Arrastão Nude</h3>
+        <p>Ideal para compor o look praia com ousadia e estilo.</p>
+        <a href="#">Comprar</a>
+      </div>
+    </div>
+    <h2 style="margin-top: 3rem;">Moda Íntima</h2>
+    <div class="product-grid">
+      <div class="product">
+        <h3>Conjunto de Lingerie Delicada</h3>
+        <p>Conforto e charme para o dia a dia.</p>
+        <a href="#">Comprar</a>
+      </div>
+      <!-- Adicione mais produtos aqui -->
+    </div>
+  </section>
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+  <section id="sobre" class="sobre">
+    <h2>Sobre a Serena</h2>
+    <p>A Serena nasceu para empoderar mulheres através da moda praia e íntima. Valorizamos o conforto, a sensualidade e a liberdade de expressão. Cada peça é pensada para que você se sinta confiante e única.</p>
+  </section>
 
-</header>
-
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
-
-## Step 1: Enable GitHub Pages
-
-_Welcome to GitHub Pages and Jekyll :tada:!_
-
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
-
-### :keyboard: Activity: Enable GitHub Pages
-
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+  <footer id="contato">
+    <h2>Fale com a gente</h2>
+    <p>
+      <a href="https://wa.me/5547992405443" target="_blank">WhatsApp</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="mailto:contato@serena.com">E-mail</a>
+    </p>
+    <p>&copy; 2025 Serena. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
